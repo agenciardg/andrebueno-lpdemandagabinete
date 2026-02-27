@@ -24,6 +24,96 @@
         "-y",
         "@21st-dev/magic@latest"
       ]
+    },
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "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"
+      }
+    },
+    "commands": {
+      "command": "npx",
+      "args": [
+        "mcp-server-commands"
+      ]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ]
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "rdg": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "google-maps-mcp-server"
+      ],
+      "env": {
+        "GOOGLE_MAPS_API_KEY": "AIzaSyB9Ya4barQiGfgqZsdi9KrxTPpdGidzFsY"
+      }
+    },
+    "chrome-devtools-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest"
+      ]
+    },
+    "supabase-rdg": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase@latest",
+        "--access-token",
+        "sbp_7faded9af0b93566b587d842d348d5a32dc071d3",
+        "--project-ref",
+        "kfhenndnrbbvlwengrtw"
+      ]
+    },
+    "supabase-andresantos": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase@latest",
+        "--access-token",
+        "sbp_7faded9af0b93566b587d842d348d5a32dc071d3",
+        "--project-ref",
+        "arzoiwlinsswslhokwxk"
+      ]
+    },
+    "supabase-andrebueno": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase@latest",
+        "--access-token",
+        "sbp_7faded9af0b93566b587d842d348d5a32dc071d3",
+        "--project-ref",
+        "bnyjhvcmasloqunstjoz"
+      ]
+    },
+    "bright-data": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@brightdata/mcp"
+      ],
+      "env": {
+        "API_TOKEN": "4c4051538782980cf507aa3a163cecbd2ee7167d21e3c8a21a0e5a359d741ace"
+      }
     }
   }
 }
