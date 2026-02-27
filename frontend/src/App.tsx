@@ -17,7 +17,6 @@ import PrivacyModal from './components/PrivacyModal'
 
 export default function App() {
   const [submitted, setSubmitted] = useState(false)
-  const [protocolo, setProtocolo] = useState('')
   const [file, setFile] = useState<File | null>(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [privacyOpen, setPrivacyOpen] = useState(false)
@@ -110,13 +109,9 @@ export default function App() {
         throw insertError
       }
 
-      setProtocolo(protocolNum)
       setSubmitted(true)
     } catch (err) {
       console.error('Erro ao enviar:', err)
-      // Fallback - still show success with local protocol
-      const fallbackProtocol = `GAB-${new Date().getFullYear()}-${String(Math.floor(Math.random() * 99999)).padStart(5, '0')}`
-      setProtocolo(fallbackProtocol)
       setSubmitted(true)
     } finally {
       setIsSubmitting(false)
@@ -126,7 +121,6 @@ export default function App() {
   const handleReset = () => {
     reset()
     setSubmitted(false)
-    setProtocolo('')
     setFile(null)
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
